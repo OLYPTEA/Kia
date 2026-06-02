@@ -7,6 +7,10 @@
 
 <img width="1918" height="1018" alt="KiaStudio" src="https://github.com/user-attachments/assets/8ba67ce8-2601-4a23-b78b-73d092ff01e2" />
 
+https://github.com/user-attachments/assets/333e42ec-3789-4127-9b2e-19c26ccea488
+
+
+
 Refonte complète (Hardware, Firmware & Software) d'un bras robotique imprimé en 3D (4 axes + pince), inspirée initialement du projet de la chaîne *Build Some Stuff*. 
 
 Cette version abandonne le combo limité Arduino Uno + PCA9685 au profit d'une **carte sur mesure basée sur l'ESP32-S3**, capable de gérer la cinématique et l'alimentation de puissance de manière autonome.
