@@ -1,4 +1,11 @@
-#  Kia Arm Controller (ESP32-S3) By OlypTea (Baser sur : https://www.youtube.com/watch?v=AIsVlgopqJc )
+#  Kia Arm Controller (ESP32-S3) By OlypTea
+ (Baser sur : https://www.youtube.com/watch?v=AIsVlgopqJc )
+
+<img width="1537" height="813" alt="CarteKia" src="https://github.com/user-attachments/assets/dafd473e-ae1b-489c-9e00-e7207d854a1b" />
+
+<img width="1656" height="872" alt="Kia-Arm-Ctrl22" src="https://github.com/user-attachments/assets/cb482844-e9b0-4ea2-b0ad-96000f585973" />
+
+<img width="1918" height="1018" alt="KiaStudio" src="https://github.com/user-attachments/assets/8ba67ce8-2601-4a23-b78b-73d092ff01e2" />
 
 Refonte complète (Hardware, Firmware & Software) d'un bras robotique imprimé en 3D (4 axes + pince), inspirée initialement du projet de la chaîne *Build Some Stuff*. 
 
