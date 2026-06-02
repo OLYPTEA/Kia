@@ -75,7 +75,7 @@ Interface 3D légère basée sur une **architecture hexagonale** en Python 3.11 
 
 ---
 
-## 🙏 Remerciements & Références
+##  Remerciements & Références
 * **Build Some Stuff** Fondateur du projet initiale
 * **Espressif ESP-IDF** - Framework.
 * **KiCad EDA** - Suite de conception électronique open-source.
