@@ -1,0 +1,25 @@
+idf_component_register(
+    SRCS
+        "svc_comm.c"
+        "comm_router.c"
+        "proto_text.c"
+        "proto_binary.c"
+        "transport_usb_cdc.c"
+        "transport_ble.c"
+    INCLUDE_DIRS "include"
+    REQUIRES
+        common
+        drv_servo
+        svc_motion
+        svc_safety
+        svc_storage
+        app_calibration
+        svc_ota
+        dom_kinematics
+        esp_event
+        esp_timer
+        esp_driver_usb_serial_jtag
+        driver
+        bt
+        nvs_flash
+)

@@ -1,0 +1,12 @@
+idf_component_register(
+    SRCS
+        "ringbuf.c"
+        "cobs.c"
+        "crc32.c"
+        "kia_log.c"
+    INCLUDE_DIRS
+        "include"
+    REQUIRES
+        freertos
+        esp_common
+)

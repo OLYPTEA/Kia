@@ -1,0 +1,9 @@
+# Kia Studio — runtime dependencies
+pyserial>=3.5
+PySide6>=6.6
+moderngl>=5.8          # studio 3D viewport (matte PBR-ish + soft shadows)
+pyqtgraph>=0.13        # legacy 3D viewport (fallback)
+PyOpenGL>=3.1
+numpy>=1.24
+# optional wireless transport (parity with kia_cli.py)
+bleak>=0.21.0

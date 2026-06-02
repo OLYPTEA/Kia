@@ -1,0 +1,28 @@
+# --- Exclusions spécifiques à ton projet ---
+3-Software/packaging/installer_out/
+*.exe
+*.msi
+
+# --- Dépendances et builds (Node.js / JavaScript) ---
+node_modules/
+dist/
+build/
+.npm
+*.log
+
+# --- Environnement et Secrets (À NE JAMAIS PUSHER) ---
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# --- Fichiers système et éditeurs ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln

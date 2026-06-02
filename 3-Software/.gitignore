@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+
+# PyInstaller build artifacts
+build/
+dist/
+*.manifest
+
+# generated calibration / geometry (user-specific, regenerated in-app)
+kia_studio/resources/mesh_calib.json
+kia_studio/resources/geometry.json
+kia_studio/resources/geometry_firmware.h
+
+# render harness output
+tools/render_out/
+
+*.exe

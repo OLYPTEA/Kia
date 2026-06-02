@@ -1,0 +1,9 @@
+(version 1)
+
+(rule "Degagement reduit broches U1 U2 U3"
+   (constraint clearance (min 0.15mm))
+   (condition "A.Type == 'pad' && (A.Parent == 'U1' || A.Parent == 'U2' || A.Parent == 'U3')"))
+
+(rule "Tolerance speciale pour Power_3V3"
+   (constraint clearance (min 0.15mm))
+   (condition "A.NetClass == 'Power_3V3' || B.NetClass == 'Power_3V3'"))

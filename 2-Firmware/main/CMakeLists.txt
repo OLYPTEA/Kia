@@ -1,0 +1,29 @@
+idf_component_register(
+    SRCS
+        "main.c"
+    INCLUDE_DIRS
+        "."
+    REQUIRES
+        common
+        drv_servo
+        drv_pot
+        drv_ina219
+        drv_led
+        drv_buttons
+        drv_buzzer
+        svc_safety
+        svc_motion
+        svc_comm
+        svc_storage
+        svc_telemetry
+        dom_kinematics
+        dom_joint
+        app_mode_fsm
+        app_calibration
+        svc_ota
+        esp_event
+        esp_timer
+        nvs_flash
+        driver
+        esp_pm
+)

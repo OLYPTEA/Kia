@@ -1,0 +1,217 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "00000000-0000-0000-0000-000000000001")
+	(paper "A3")
+	(title_block
+		(title "Kia Arm Controller — Root Sheet")
+		(date "2026-05-27")
+		(rev "v1.0-draft")
+		(company "Sacha Gibert")
+		(comment 1 "ESP32-S3 controller for 4-axis + gripper robotic arm")
+		(comment 2 "Hierarchical: Power / MCU / IO / Connectors")
+	)
+	(lib_symbols)
+	(text "Kia Arm Controller v1.0 — Hierarchical Root\n\nSheets:\n  • Power.kicad_sch       — Input, protections, buck VSERVO 6V/10A, buck +3V3, LDO +5V_LOGIC, INA219\n  • MCU.kicad_sch         — ESP32-S3-WROOM-1-N16R8, USB-C, debug, BOOT/RESET, LEDs\n  • IO.kicad_sch          — Pots, buttons, switch mode, buzzer, 74AHCT244 buffer\n  • Connectors.kicad_sch  — 5x servo headers, expansion, SWD\n\nGlobal nets passed between sheets:\n  Power: VIN_RAW, +VSERVO, +5V_LOGIC, +3V3, GND, GND_PWR, GND_AGND\n  Signals: PWM_*, POT_*, I2C_*, SPI_*, USB_DM, USB_DP, ~ESTOP, MODE_SEL,\n           SERVO_EN, LED_STATUS, LED_FAULT, WS2812_DI, BUZZER, ~BOOT, ~RESET,\n           UART_TX, UART_RX, EXP_IO1, EXP_IO2\n\nNotes:\n  - PCB target: 100 x 70 mm, 4 layers (SIG/GND/PWR/SIG), 2oz internal copper.\n  - Strapping pins to respect: GPIO0, 3, 45, 46.\n  - GPIO 26-37 reserved by octal PSRAM/Flash on N16R8 — DO NOT USE.\n  - See docs/03-schematic-spec.md for component-level details.\n"
+		(exclude_from_sim no)
+		(at 25.4 25.4 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left top)
+		)
+		(uuid "00000000-0000-0000-0000-000000000100")
+	)
+	(sheet
+		(at 200 50)
+		(size 60 40)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "00000000-0000-0000-0000-000000000010")
+		(property "Sheetname" "Power"
+			(at 200 49.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Power.kicad_sch"
+			(at 200 90.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Kia-Arm-Ctrl"
+				(path "/00000000-0000-0000-0000-000000000001"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 200 110)
+		(size 60 40)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "00000000-0000-0000-0000-000000000020")
+		(property "Sheetname" "MCU"
+			(at 200 109.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "MCU.kicad_sch"
+			(at 200 150.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Kia-Arm-Ctrl"
+				(path "/00000000-0000-0000-0000-000000000001"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 280 50)
+		(size 60 40)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "00000000-0000-0000-0000-000000000030")
+		(property "Sheetname" "IO"
+			(at 280 49.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "IO.kicad_sch"
+			(at 280 90.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Kia-Arm-Ctrl"
+				(path "/00000000-0000-0000-0000-000000000001"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 280 110)
+		(size 60 40)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "00000000-0000-0000-0000-000000000040")
+		(property "Sheetname" "Connectors"
+			(at 280 109.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Connectors.kicad_sch"
+			(at 280 150.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Kia-Arm-Ctrl"
+				(path "/00000000-0000-0000-0000-000000000001"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

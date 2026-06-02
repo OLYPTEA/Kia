@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kia-studio"
+version = "0.1.0"
+description = "Desktop control & 3D visualization for the Kia Arm controller"
+requires-python = ">=3.11"
+dependencies = [
+    "pyserial>=3.5",
+    "PySide6>=6.6",
+    "pyqtgraph>=0.13",
+    "PyOpenGL>=3.1",
+    "numpy>=1.24",
+]
+
+[project.optional-dependencies]
+ble = ["bleak>=0.21.0"]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+kia-studio = "kia_studio.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["kia_studio*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
